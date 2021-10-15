@@ -1,6 +1,8 @@
 import React from "react";
 
-function InputArea() {
+function InputArea(props) {
+  const { handleChange, inputText, addItem } = props;
+
   return (
     <div className="form">
       <input onChange={handleChange} type="text" value={inputText} />
